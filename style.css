@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;}
+
+body{
+    background: radial-gradient(circle, #d8aed9, #f3d5ba,#f9c7fa);    display: flex;
+    margin: 15% auto;
+    justify-content: center;
+}
+.container{
+    background-color: #e67bb9;
+    width: 25vw;
+    height: 30vh;
+    color: aliceblue;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 20px;
+    box-shadow:0 0 40px 20px #f9dfc8be ;
+
+}
+#button{
+    background-color: #66a6ea;
+    border :1px solid #8fb9e7 ;
+    height: 50px;
+    width: 230px;
+    border-radius: 20px;
+    color: #fefefe;
+    position: absolute;
+    top: 65%;
+    left: 56%;
+    font-family: 'Noto Serif', serif;
+    cursor: pointer;
+}
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+    body {
+        background: lightblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        padding-top: 40px;
+        width: 50vw;
+        max-width: 55vw;
+        height: 15vh;
+        font-size: 1rem;
+    }
+    #button{
+       
+        max-width: 190px;
+    }
+ 
+}
+.stopwatch{
+    padding-bottom: 15%;
+    font-size: 2.5rem;
+}
+.popup{
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    background-color: #6ab5cc;
+    visibility: hidden;
+    border-radius: 10px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    box-shadow: 1px 20px 40px 5px rgba(98, 96, 96, 0.697);
+}
+
+.pop_container{
+   width: 30vw;
+   height: 30vh;
+   text-align: center;
+   margin-top: 10%;
+   margin-left: 14%;
+   border-radius: 20px;
+}
+.btn{
+    width: 160px;
+    height: 47px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+.stopWatchbtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn:hover{
+    color: #faf3ee;
+    cursor: pointer;
+    background: radial-gradient(circle, #e480e5, #ecb482);   
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+#X-btn{
+    margin-left: 95%;
+    margin-top: 10px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #f3d5ba;
+    cursor: pointer;
+
+}

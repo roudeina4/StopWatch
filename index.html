@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chronometre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="time">
+            <span id="hours"></span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
+        </div>
+        <div>
+            <button id="button" onclick="openPopup()">SET A STOPWATCH</button>
+        </div>
+    </div>
+
+
+
+    <div class="popup" id="popup">
+        <button id="X-btn" onclick="closePopup()">X</button>
+
+        <div class="pop_container">
+        <div class="stopwatch">
+            <span id="hourstopwatch"></span>
+            <span id="minutetopwatch"></span>
+            <span id="secondstopwatch"></span>
+        </div>
+        <div class="stopWatchbtn">
+            <button class="btn" id=" start" onclick="start()">START</button>
+            <button class="btn" id=" stop" onclick="stop()">STOP</button>
+            <button class="btn" id=" reset" onclick="reset()">RESET</button>
+        </div>
+      
+        </div>
+    </div>
+</body>
+</html>
